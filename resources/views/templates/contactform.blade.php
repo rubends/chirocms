@@ -11,8 +11,8 @@
         ]) !!}
 
         <div class="form-group">
-            {!! Form::label('name') !!}
-            {!! Form::text('name', null, ['class' => 'form-control']) !!}
+            {!! Form::label('Naam') !!}
+            {!! Form::text('Naam', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -21,11 +21,11 @@
         </div>
 
         <div class="form-group">
-            {!! Form::label('message') !!}
-            {!! Form::textarea('message', null, ['class' => 'form-control']) !!}
+            {!! Form::label('Bericht') !!}
+            {!! Form::textarea('Bericht', null, ['class' => 'form-control']) !!}
         </div>
 
-        {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
+        {!! Form::submit('Verzenden', ['class' => 'btn btn-primary']) !!}
 
         {!! Form::close() !!}
 

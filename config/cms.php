@@ -12,7 +12,8 @@ return [
 		'blog.post' => App\Templates\BlogPostTemplate::class,
 		'bookingform' => App\Templates\BookingFormTemplate::class,
 		'contactform' => App\Templates\ContactFormTemplate::class,
-		'photoalbums' => App\Templates\PhotoAlbumsTemplate::class
+		'photoalbums' => App\Templates\PhotoAlbumsTemplate::class,
+		'calender' => App\Templates\CalenderTemplate::class
 
 	],
 
