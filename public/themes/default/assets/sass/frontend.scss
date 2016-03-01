@@ -1,0 +1,709 @@
+@import "bootstrap";
+
+.flag {
+    height: 1em;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+
+    .dropdown-menu {
+        top: -8px;
+        left: 100%;
+    }
+
+    &:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+.caret {
+    &.right {
+        border: $caret-width-base solid transparent;
+        border-left: $caret-width-base solid;
+    }
+}
+
+.error-status {
+    background-color:white;
+    padding-top:20px;
+}
+.alert ul li {
+    text-align: left;
+}
+
+.cms-content img {
+    width: 30%;
+    margin: 0 1.5%;
+}
+.cms-content p {
+    margin: 20px 0;
+}
+.cms-content table p {
+    margin: 0px 0;
+}
+.cms-content ul li {
+    text-align: left;
+}
+.cms-content h2 {
+
+    font-weight: bold;
+    font-family: "Pier Sans", sans-serif;
+    font-size: 1.5em;
+}
+.cms-content h3 {
+
+    font-weight: 400;
+    font-family: "Pier Sans", sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+
+
+/*****************************************/
+
+
+body {
+    font-family: "Helvetica", Verdana, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    padding-top:50px;
+}
+
+a {
+    font-family: Verdana, "Helvetica", sans-serif;
+}
+
+li {
+    text-align: center;
+}
+
+.dummy {
+    clear: both;
+}
+
+section#main {
+    padding-top:35px;
+    padding-bottom: 65px;
+    background-color: #fff;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/* The Home Page */
+
+
+#home-content .row {
+    margin-bottom: 25px;
+}
+.fs-bg {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#intro-flags {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#fr, #es, #en, #nl, #de {
+    margin: 20px 0 0 10px;
+    float: right;
+    width: 25px;
+    height: 16.8px;
+    cursor: pointer;
+}
+#fr {
+    background-image: url("../images/flags/fr.png");
+    background-size: 25px 16.8px;
+    background-repeat: no-repeat;
+}
+
+#es {
+    background-image: url("../images/flags/es.png");
+    background-size: 25px 16.8px;
+    background-repeat: no-repeat;
+}
+
+#en {
+    background-image: url("../images/flags/en.png");
+    background-size: 25px 16.8px;
+    background-repeat: no-repeat;
+}
+
+#nl {
+    background-image: url("../images/flags/nl.png");
+    background-size: 25px 16.8px;
+    background-repeat: no-repeat;
+}
+
+#de {
+    background-image: url("../images/flags/de.png");
+    background-size: 25px 16.8px;
+    background-repeat: no-repeat;
+}
+
+#intro-title {
+    position: absolute;
+    font-family: "Pier Sans", sans-serif;
+    color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35%;
+}
+
+#intro-title h1 {
+    font-weight: 600;
+    font-size: 2.3em;
+    text-align: center;
+    font-family: "Pier Sans", sans-serif;
+    margin: 50px 10px;
+}
+
+#intro-title h1 span {
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 125px;
+    margin: -40px auto;
+}
+
+#intro-title p {
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 0;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+nav.navbar.absolute-bottom {
+    position: absolute;
+    color: white;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+nav.navbar.navbar-fixed-top {
+    background-color: white;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+
+.navbar.navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+/*.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  border: none;
+}*/
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+}
+
+.navbar-nav {
+    font-size: 2.25em;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
+    border: none;
+}
+
+#text {
+    padding: 0 25px 0 0;
+}
+
+#omg-content .row {
+    margin-top: 25px;
+}
+
+.big-title {
+    margin-top: 2em;
+}
+
+.txt {
+    text-align: center;
+    padding: 0 25px;
+    font-size: 1.1em;
+    line-height: 30px;
+}
+
+.left, .right {
+    height: auto;
+    width: 100%;
+}
+
+.txt p span {
+    font-weight: bold;
+}
+
+.txt a {
+    font-weight: bold;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+
+#scrolling_nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#scrolling_nav nav ul li {
+    display: inline-block;
+    font-size: 2.5em;
+    padding: 5px 25px;
+}
+
+#scrolling_nav nav ul li a, #scrolling_nav nav ul li a:focus, #scrolling_nav nav ul li a:hover{
+    color: white !important;
+
+}
+
+#content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#home-content {
+    text-align: center;
+    padding: 50px 0;
+    background-color:white;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Pier Sans", sans-serif;
+    font-size: 2.0em;
+    margin:25px 0;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/* de Omgeving page */
+
+nav {
+    text-align: center;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(35, 31, 32, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(35, 31, 32, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(35, 31, 32, 0.25);
+}
+
+nav ul {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 25px 15px 25px;
+}
+
+nav ul li a{
+    color: inherit;
+}
+
+.txtAl {
+    float: left;
+    width: 100%;
+}
+
+.txtAl p {
+    text-align: center;
+    margin-top: -25px;
+    padding: 0 130px;
+    font-size: 2.25em;
+    line-height: 30px;
+}
+
+.txtAl span {
+    font-weight: bold;
+}
+
+.alt p{
+    margin: 261px auto 0 auto;
+    text-align: center;
+    width: 350px;
+    color: #0d0d0d;
+    font-size: 1.75em;
+}
+
+.txtTocht {
+    margin-top: 100px;
+    float: left;
+}
+
+.txtTocht p {
+    text-align: center;
+    margin-top: -25px;
+    padding: 0 130px;
+    font-size: 2.25em;
+    line-height: 30px;
+}
+
+.txtTocht p span {
+    font-weight: bold;
+}
+
+.activ {
+    float: left;
+}
+
+.activ p{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 130px;
+    font-size: 2.25em;
+    line-height: 30px;
+}
+
+.activ p:nth-child(2) {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 225px;
+    font-size: 2.25em;
+    line-height: 30px;
+}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Foto's */
+
+#foto-content {
+    height: auto;
+}
+
+.abs {
+    position: absolute;
+}
+
+#foto-content figure img{
+    height: 300px; 
+    width: 400px; 
+}
+
+#foto-content p {
+    font-size: 2em;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.nopadding {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Reservatie */
+
+.step {
+    text-align: left;
+    background-color: #f3f3f3;
+    // font-size: 1.25em;
+    margin-top: -15px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#step1 label, #step2 label, #step3 label, #step4 label, #step5 label {
+    font-weight: normal;
+}
+
+#step1 input {
+    margin: 0 auto;
+}
+
+#step4 .row p {
+    margin-left: 15px;
+    font-size: 1.25em;
+}
+
+form p {
+    font-family: "Pier Sans", sans-serif;
+    font-size: 1.25em;
+}
+
+form p:not(:first-child) {
+    margin-top: 25px;
+}
+
+form p span{
+    font-size: 2.5em;
+}
+
+.btn {
+    margin-top: 25px; 
+}
+
+.pad {
+    padding: 1px;
+}
+
+.pad-bot {
+    padding: 0px 1px 1px 1px;
+}
+
+/* Guestbook */
+
+#guest-form input{
+    text-align: center;
+}
+
+#guest-form .form-group label {
+    font-size: 2.25em;
+    font-weight: normal;
+}
+
+#guest-form h1 {
+    text-align: center;
+    font-family: "Pier Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 50px 0;
+}
+
+#guest-comment {
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+.com {
+    margin-top: -75px;
+    padding: 50px;
+    float: left;
+}
+
+.com h1{
+    text-align: left;
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+.com p{
+    font-size: 2em;
+    margin: -50px 10px;
+}
+
+.com h1 span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Voorwaarden */
+.tit {
+    margin-top: 25px;
+    font-family: "Pier Sans", sans-serif;
+    font-size: 1.25em;
+}
+
+.tit span {
+    font-size: 1.35em;
+}
+
+#vor-content ul li {
+    margin-left: 25px;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #202020;
+}
+
+footer p {
+    margin-top: 25px;
+    color: #999999;
+}
+
+@media screen and (max-width: 580px) {
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul li:hover {
+        font-weight: bold;
+        background-color: #f3f3f3;
+    }
+
+    nav ul li a {
+        padding: 17px 120px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        color: #232323
+    }
+
+    .navbar-fixed-bottom ul li {
+        background-color: white;
+        color: #232323;
+    }
+
+    .navbar-fixed-bottom.container {
+        padding-left: -15px !important;
+    }
+}
+
+#photo-overlay {
+  display:none;
+  position: fixed;
+  top:0;bottom:0;left:0;right:0;
+  background-color: rgba(0,0,0,0.7);
+  cursor:pointer;
+}
+#photo-overlay img {
+  display:block;
+  margin:auto;
+  max-width: 90%;
+  max-height: 90%;
+  margin-top:7%;
+}
+#photos {
+   /* zorgt ervoor dat er geen spatie is */
+   line-height: 0;
+   
+   -webkit-column-count: 5;      /* 5 kolommen */
+   -webkit-column-gap:   10px;    /* 10px tussen iedere kolom */
+   -moz-column-count:    5;
+   -moz-column-gap:      10px;
+   column-count:         5;
+   column-gap:           10px;
+}
+
+#photos img {
+  cursor:pointer;
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 10px;
+}
+
+/* Alles hieronder zorgt ervoor dat het er beter uitziet op mobiel */
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
