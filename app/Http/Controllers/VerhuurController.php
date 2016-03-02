@@ -8,9 +8,9 @@ use App\Http\Requests;
 use Mail;
 use App\Http\Controllers\Controller;
 
-class BookingController extends Controller
+class VerhuurController extends Controller
 {
-    public function Submit(Requests\BookingFormRequest $request) 
+    public function Submit(Requests\VerhuurFormRequest $request) 
     {
     	$data = ['booking'=>$request->all()];
 		Mail::send('emails.booking.details', $data, function ($message) {

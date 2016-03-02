@@ -2,10 +2,11 @@
 
 return [
 	'person' => 'Persoon',
-	'pick_a_date' => 'Kies eerst uw data.',
-	'pick_a_size' => 'Kies de grote van uw bungalow.',
-	'fill_in_contact_details' => 'Vul uw contactgegeven in.',
-	'fill_in_visitor_info' => 'Vul de persoonsgegevens in voor alle huurders (incl. kinderen).',
+	'pick_a_date' => 'Kies uw data.',
+	'pick_a_size' => '',
+	'vereniging' => 'Van welke vereniging ben je?',
+	'fill_in_contact_details' => 'Vul uw contactgegevens in.',
+	'fill_in_visitor_info' => '',
 	'extra_towels' => 'Wenst u nog extra handdoeken?',
 	'not_a_robot' => 'Bewijs dat u geen robot bent.',
 	'book' => 'Reserveer!',

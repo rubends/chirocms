@@ -10,13 +10,13 @@ return [
 		'home' => App\Templates\HomeTemplate::class,
 		'blog' => App\Templates\BlogTemplate::class,
 		'blog.post' => App\Templates\BlogPostTemplate::class,
-		'bookingform' => App\Templates\BookingFormTemplate::class,
+		'verhuurform' => App\Templates\VerhuurFormTemplate::class,
 		'contactform' => App\Templates\ContactFormTemplate::class,
 		'photoalbums' => App\Templates\PhotoAlbumsTemplate::class,
 		'calender' => App\Templates\CalenderTemplate::class
 
 	],
 
-	'email' => 'info@welcome2altea.com'
+	'email' => 'info@chirosintjob.com'
 
 ];

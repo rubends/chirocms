@@ -71,7 +71,7 @@
             $thumb = $("<div/>").addClass('thumbnail')
                 .appendTo($col);
             $('<img/>').attr('src', url)
-                .attr('alt', 'Welcome2Altea')
+                .attr('alt', 'chirosintjob')
                 .appendTo($thumb);
         }
 

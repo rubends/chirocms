@@ -112,6 +112,7 @@ return [
         'end_date' => 'Eind datum',
         'firstname' => 'Voornaam',
         'lastname' => 'Achternaam',
+        'vereniging' => 'Vereniging',
         'firstname1' => 'Voornaam',
         'lastname1' => 'Achternaam',
         'street' => 'Straat',

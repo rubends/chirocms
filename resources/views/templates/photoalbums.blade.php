@@ -13,7 +13,7 @@
                 {!! $album->description !!}
                 <section id="photos">
                     @foreach ($album->photos as $photo)
-                        <img src="{{$photo->filename}}" alt="Welcome2Altea" />
+                        <img src="{{$photo->filename}}" alt="chirosintjob" />
                     @endforeach
                 </section>
             </article>

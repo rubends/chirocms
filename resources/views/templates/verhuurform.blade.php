@@ -28,15 +28,11 @@
                 <div class="dummy"></div>
             </div>
             <!-- Step 2 -->
-            <p><span>2</span> @lang('booking.pick_a_size')</p>
+            <p><span>2</span> @lang('booking.vereniging')</p>
             <div class="step" id="step2">
-                <div class="col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
-                    {!! Form::radio('housesize', 'small', false, array('id'=>'housesize-small')) !!}
-                    {!! Form::label('housesize-small','107m²') !!}
-                </div>
-                <div class="col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
-                    {!! Form::radio('housesize', 'big', true, array('id'=>'housesize-big')) !!}
-                    {!! Form::label('housesize-big','147m²') !!}
+                <div class="ol-sm-9 col-sm-offset-1 col-md-9 col-md-offset-1 col-lg-9 col-lg-offset-1">
+                        {!! Form::label('vereniging', Lang::get('validation.attributes.vereniging')) !!}
+                        {!! Form::text('vereniging', null, ['class' => 'form-control']) !!}
                 </div>
                 <div class="dummy"></div>
             </div>
@@ -90,53 +86,8 @@
                     </div>
                 </div>
             </div>
-            <p><span>4</span> @lang('booking.fill_in_visitor_info')</p>
-            <div class="step" id="step4">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        @for ($i = 1; $i <= 4; $i++)
-                            <div class="row">
-                                <p>@lang('booking.person') {{$i}}</p>
-                                <div class="col-sm-5 col-md-5 col-lg-5">
-                                    {!! Form::label('firstname'.$i, Lang::get('validation.attributes.firstname')) !!}
-                                    {!! Form::text('firstname'.$i, null, ['class' => 'form-control']) !!}
-                                </div>
-                                <div class="col-sm-5 col-md-5 col-lg-5">
-                                    {!! Form::label('lastname'.$i, Lang::get('validation.attributes.lastname')) !!}
-                                    {!! Form::text('lastname'.$i, null, ['class' => 'form-control']) !!}
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-6">
-                        @for ($i = 5; $i <= 8; $i++)
-                            <div class="row">
-                                <p>@lang('booking.person') {{$i}}</p>
-                                <div class="col-sm-5 col-md-5 col-lg-5">
-                                    {!! Form::label('firstname'.$i, Lang::get('validation.attributes.firstname')) !!}
-                                    {!! Form::text('firstname'.$i, null, ['class' => 'form-control']) !!}
-                                </div>
-                                <div class="col-sm-5 col-md-5 col-lg-5">
-                                    {!! Form::label('lastname'.$i, Lang::get('validation.attributes.lastname')) !!}
-                                    {!! Form::text('lastname'.$i, null, ['class' => 'form-control']) !!}
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
-                </div>
-            </div>
-            <p><span>5</span> @lang('booking.extra_towels')</p>
-            <div class="step" id="step5">
-                <div class="row">
-                    <div class="col-sm-8 col-md-8 col-lg-8">
-                        {!! Form::checkbox('towels', 'yes', false, array('id' => 'towels')) !!}
-                        {!! Form::label('towels', Lang::get('validation.attributes.towels')) !!}
-                    </div>
-                </div>
-            </div>
-
-            <p><span>6</span> @lang('booking.not_a_robot')</p>
+            <p><span>4</span> @lang('booking.not_a_robot')</p>
             <div class="step">
                 <div class="row">
                     <div class="col-md-6">
