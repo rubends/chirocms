@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 02 mrt 2016 om 18:09
+-- Gegenereerd op: 11 mrt 2016 om 17:14
 -- Serverversie: 5.6.26
 -- PHP-versie: 5.6.12
 
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `id197075_cmsv2`
@@ -123,22 +123,23 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `rgt` int(11) DEFAULT NULL,
   `depth` int(11) DEFAULT NULL,
   `hidden` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `pages`
 --
 
 INSERT INTO `pages` (`id`, `name`, `uri`, `created_at`, `updated_at`, `template`, `parent_id`, `lft`, `rgt`, `depth`, `hidden`) VALUES
-(6, NULL, '/', '2016-03-01 18:26:04', '2016-03-01 17:26:04', 'home', NULL, 1, 2, 0, 0),
-(10, 'contact.form', 'contact', '2016-03-02 13:10:31', '2016-03-02 12:10:31', 'contactform', NULL, 15, 16, 0, 0),
-(11, 'terms', 'terms-and-conditions', '2016-03-02 13:10:31', '2016-03-02 12:10:31', NULL, NULL, 17, 18, 0, 1),
+(6, NULL, '/', '2016-03-10 18:15:01', '2016-03-10 17:15:01', 'home', NULL, 1, 2, 0, 0),
+(10, 'contact.form', 'contact', '2016-03-10 17:41:41', '2016-03-10 16:41:41', 'contactform', NULL, 17, 18, 0, 0),
+(11, 'terms', 'terms-and-conditions', '2016-03-10 17:41:41', '2016-03-10 16:41:41', NULL, NULL, 19, 20, 0, 1),
 (14, NULL, 'info', '2016-03-01 18:32:02', '2016-03-01 17:32:02', NULL, NULL, 3, 4, 0, 0),
-(16, NULL, 'albums', '2016-03-01 18:21:04', '2016-03-01 17:21:04', 'photoalbums', NULL, 7, 8, 0, 0),
-(17, NULL, 'agenda', '2016-03-01 19:28:29', '2016-03-01 18:28:29', 'calender', NULL, 5, 6, 0, 0),
-(18, NULL, 'verhuur', '2016-03-02 13:34:05', '2016-03-02 12:34:05', NULL, NULL, 11, 14, 0, 0),
-(19, NULL, 'programma', '2016-03-01 18:21:26', '2016-03-01 17:21:26', NULL, NULL, 9, 10, 0, 0),
-(20, NULL, 'verhuurform', '2016-03-02 13:10:31', '2016-03-02 12:10:31', 'verhuurform', 18, 12, 13, 1, 0);
+(16, NULL, 'albums', '2016-03-10 17:41:41', '2016-03-10 16:41:41', 'photoalbums', NULL, 9, 10, 0, 0),
+(17, NULL, 'agenda', '2016-03-11 15:09:08', '2016-03-11 14:09:08', 'calender', NULL, 5, 6, 0, 0),
+(18, NULL, 'verhuur', '2016-03-10 17:41:41', '2016-03-10 16:41:41', NULL, NULL, 13, 16, 0, 0),
+(19, NULL, 'programma', '2016-03-11 15:42:19', '2016-03-11 14:42:19', 'programma', NULL, 11, 12, 0, 0),
+(20, NULL, 'verhuurform', '2016-03-10 17:41:41', '2016-03-10 16:41:41', 'verhuurform', 18, 14, 15, 1, 0),
+(21, NULL, 'leidingsploeg', '2016-03-10 17:42:02', '2016-03-10 16:42:02', NULL, NULL, 7, 8, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -152,14 +153,14 @@ CREATE TABLE IF NOT EXISTS `page_translations` (
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `locale` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `page_translations`
 --
 
 INSERT INTO `page_translations` (`id`, `page_id`, `title`, `content`, `locale`) VALUES
-(1, 6, 'Home', '<h2>Chiro Sint Job</h2>\r\n\r\n<h3>de leukste jeugdbeweging van Sintjob en Claudia is cute</h3>\r\n\r\n<p>&nbsp;</p>\r\n', 'nl'),
+(1, 6, 'Home', '<h2>Chiro Sint Job</h2>\r\n\r\n<h1><a href="http://www.google.be">Roeland </a>is raar</h1>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3>de leukste jeugdbeweging van Sintjob en Claudia is cute</h3>\r\n\r\n<p>body p</p>\r\n\r\n<h1>body h1</h1>\r\n\r\n<h2>body h2</h2>\r\n\r\n<h3>body h3</h3>\r\n\r\n<pre>\r\nbody pre / formatted</pre>\r\n\r\n<hr />\r\n<table border="1" cellpadding="1" cellspacing="1" style="width:500px">\r\n	<tbody>\r\n		<tr>\r\n			<td><em><strong>WOA</strong></em></td>\r\n			<td>COOL</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n			<ol>\r\n				<li>test</li>\r\n				<li>test</li>\r\n			</ol>\r\n			</td>\r\n			<td>\r\n			<p>&nbsp;</p>\r\n\r\n			<ul>\r\n				<li>omg</li>\r\n				<li>vet</li>\r\n			</ul>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>&nbsp;</td>\r\n			<td>&nbsp;</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n', 'nl'),
 (5, 6, 'Startseite', '<h2>Welcome to Altea</h2>\r\n\r\n<h3>eine Perle innerhalb Europas.</h3>\r\n\r\n<p>Wir befinden uns in die Urbanisation Sierra Altea Golf &#39; in Altea La Vella . Es liegt in der Provinz Alicante an der Costa Blanca in Spanien. Altea la Vella ist 80km von er Flughafen Alicante und 120km von Flughafen Valencia entfernt. Welcome2Altea ist kein klassisches Ferien Ort. Unsere H&auml;user liegen in einem gr&uuml;nen und ruhigen Wohngebiet, wo es auch w&auml;hrend der Sommermonate relativ ruhig bleibt, da es keine Hotels gibt. Alle unsere H&auml;user verf&uuml;gen &uuml;ber drei Schlafzimmer.</p>\r\n\r\n<p><img alt="" src="/photos/shares/56b60d3a44ef7.jpg" style="width:30%" /><img alt="" src="/photos/shares/56b60d474024a.jpg" style="width:30%" /><img alt="" src="/photos/shares/56b60d3fbd64f.jpg" style="width:30%" /></p>\r\n\r\n\r\n<p>Die H&auml;user sind 300m vom Golfplatz Don Cayo, 800 m vom Zentrum Altea la Vella und 2500m von der ruhigen K&uuml;ste &quot; La Olla entfernt . Die Weltgesundheitsorganisation hat die Region zu den ges&uuml;ndesten Mikroklima in Europa erkl&auml;rt. Die Luft enth&auml;lt eine gro&szlig;e Menge von Jod ideal f&uuml;r Lungenerkrankungen. Die hohe Anzahl von Sonnenstunden und die geringe Niederschl&auml;ge Tagen sorgen f&uuml;r ein nat&uuml;rliches Antidepressivum. Die Tagestemperatur liegen zwischen 15 &deg;C und 32 &deg;C.</p>\r\n<p><img alt="" src="/photos/shares/56b60cf9e550b.jpg" style="width:50%" /></p>\r\n\r\n<p>Da Sie in einer Bergregion sind, empfehlen wir, dass Sie ein Auto haben. Haustiere sind in unserem Haus erlaubt, wenn sie Unannehmlichkeiten verursachen.</p>\r\n\r\n<p>Unsere Initiative ist Teil der Sozialprojekt von VZW Wa-Cl, Diese Initiative ist Teil des sozialen Projekt des VZW Wa-cl, die sich richtet nach grosse Familien, den &auml;lteren, Rentner, Familien mit einem Pflege ben&ouml;tigt Familienmitglied. Sie K&ouml;nnen von unsurem Fachwissen profitieren. &nbsp;</p>\r\n\r\n<p>Bitte nemen Sie rechtzeitig Kontakt mit unsauf: info@welcome2altea.com oder 0034/965846246. Luc und Mireille w&uuml;nschen Ihnen einen angenehmen Aufenthalt und Urlaub.</p>\r\n', 'de'),
 (7, 10, 'Contact', '<p>Neem gerust contact met ons op! U kan ons ook altijd bereiken op <em>04daziedevanhier</em>!</p>\r\n', 'nl'),
 (8, 11, 'Algemene voorwaarden', '			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p>\r\n					Door uw reservering bij "W2A", bevestigt u akkoord te gaan met deze voorwaarden. Welcome2Altea wordt verder afgekort "W2A".  W2A heeft steeds het recht de algemene voorwaarden aan te passen.\r\n					</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<figure class="col-md-12">\r\n					<img src="../images/voorwaarden/voorwaarden.jpg" alt="voorwaarden" class="img-responsive img-center" width="702" height="205,5" />\r\n				</figure>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>1</span> Reserveren.</p>\r\n					<p>Via internet kunt u bij "Welcome2Altea" een aanvraag indienen voor een appartement/woning voor een bepaalde periode. Een reservering geschiedt altijd per mail of telefonisch. Deze manier van reserveren is voor beide partijen bindend. "W2A" zal de reservering binnen de 5 werkdagen schriftelijk of per e-mail aan u bevestigen. Bent u binnen deze 5 werkdagen na de boeking niet in het bezit van een schriftelijke bevestiging, dan dient u onverwijld contact op te nemen met "W2A". (0034-620719250)\r\n\r\n					U heeft altijd recht om een optie op een woning te nemen van maximaal 24 uur. Indien u binnen deze tijd geen definitieve reservering heeft kunnen maken, vervalt uw optie.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>2</span> Prijs.</p>\r\n					<p>De prijzen vindt u in de prijzentabel op onze site <a href="http://www.welcome2altea.com/home.html">www.welcome2altea.com</a> . Ze zijn steeds geldig van 1 juni tot 31 mei en kunnen ieder jaar herzien worden.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>3</span> Betaling.</p>\r\n					<p>Bij reservering wordt u 25% van de totaalsom alsmede de borg (200&euro;), de schoonmaak(60&euro; of 90&euro;)- en de eventuele linnenkosten (10&euro; per persoon) in rekening gebracht. Betaling hiervan dient te geschieden binnen 14 dagen na bevestigingsdatum, vermeld op het bevestigingsformulier. Het restant van het reserveringsbedrag moet uiterlijk 6 weken voor uw aankomst in ons bezit zijn. Bij reservering binnen 6 weken voor aanvang van uw verblijf moet het gehele bedrag ineens betaald worden binnen de 5 dagen na ontvangen van de factuur. Bij niet tijdige of onvolledige betaling is "W2A" gerechtigd de reservering te annuleren. "W2A" stuurt u hiervan schriftelijk een bevestiging.</p>\r\n					<i>OPGELET: enkel de borg, schoonmaak- en bedlinnenkost worden terugbetaald tenzij u en annuleringsverzekering heeft afgesloten!</i>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>4</span> Annulering.</p>\r\n					<p>Bij annulering gelden de volgende voorwaarden:</p>\r\n					<ul>\r\n					    <li>Bij annulering vanaf de dag van reservering tot 42 dagen voor de dag van aankomst bent u 25% van het factuurbedrag verschuldigd. De schoonmaak- en linnenkosten worden wel terugbetaald.</li>\r\n					    <li>Bij annulering vanaf de 42ste dag tot de dag van aankomst bent u het gehele factuurbedrag verschuldigd met uitzondering van de borg, de schoonmaak- en linnenkosten.</li>\r\n					    <li>Annuleringen dienen telefonisch aan "W2A" doorgegeven te worden en gelijktijdig schriftelijk, per mail of fax te worden bevestigd. Direct na ontvangst van de schriftelijke annulering zendt "W2A" een annuleringsbevestiging/nota.\r\n						Indien door enige omstandigheid "W2A" genoodzaakt wordt tot annulering van de reeds gereserveerde vakantiewoning, zal hiervan direct kennis worden gegeven aan de huurder en, indien mogelijk, onder aanbieding van een alternatief. Bij niet aanvaarden van dit alternatief, of bij het niet kunnen aanbieden van een alternatief, zal "W2A" onmiddellijk het reeds door de huurder betaalde bedrag terugstorten. De huurder heeft geen enig meer of ander recht dan het terugvorderen van dit bedrag.</li>\r\n					</ul>\r\n					<i>"W2A" adviseert u om een annuleringsverzekering af te sluiten. Dit kan bij elke willekeurige verzekeringsmaatschappij afgesloten worden binnen 14 dagen na factuurdatum.</i>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>5</span> Wijzigingen door de huurder.</p>\r\n					<p>Indien u in uw reeds gedane reservering een wijziging wenst aan te brengen, van welke aard dan ook, dan dient u dit direct aan "W2A" door te geven. Deze wijziging wordt door "W2A" schriftelijk bevestigd. De hieraan verbonden kosten bedragen &euro; 20,-. Wijzigingen in huurperiode en/of wisseling van vakantiewoning zijn overboekingen.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>6</span> Overboekingen door de huurder</p>\r\n					<p>Wenst u over te boeken naar een andere vakantiewoning, of de huurperiode te wijzigen, dan is dit mogelijk tot 6 weken voor aanvang van de huurperiode van de eerder gereserveerde vakantiewoning; de hieraan verbonden kosten bedragen &euro; 50,-. Indien u later dan deze voornoemde termijn wenst over te boeken, dan wordt dit als annulering en nieuwe boeking beschouwd en zijn de annuleringsvoorwaarden onverminderd van kracht (zie punt 4).</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>7</span> Huisdieren.</p>\r\n					<p>Huisdieren worden enkel toegestaan mits goedkeuring.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>8</span> Zorg voor huis en omgeving</p>\r\n					<p>De gehuurde vakantiewoning dient met de vereiste zorg en zorgvuldigheid te worden bewoond, met inachtneming van de rust van de omgeving. Indien de huurder zich niet als goede huurder gedraagt of ernstige hinder of last veroorzaakt voor zijn omgeving, kan hem de verdere toegang tot het huis worden ontzegd zonder aanspraak op restitutie van de huursom.</p>\r\n					<p>Indien de huurder onverhoopt schade toebrengt aan de gehuurde vakantiewoning en/of inventaris, dient dit onmiddellijk aan "W2A" te worden gemeld. De daarmee verband houdende reparatie- en/of vervangingskosten dienen onmiddellijk ter plaatse te worden vergoed. De huurder is aansprakelijk voor de door hem/haar of door medehuurders en eventuele bezoekers veroorzaakte schade, ook indien deze na vertrek geconstateerd wordt.</p>\r\n					<p>Kamperen en barbeque-en in de aangrenzende tuinen is strikt verboden.</p>\r\n					<p>Op het tennisveld en het zwembad hangt er een huishoudelijk reglement uit dat strict moet nageleefd worden.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>9</span> Water, gas en elektra</p>\r\n					<p>De prijzen die "W2A" u aanbiedt zijn inclusief water, elektra en/of gas, tenzij anders aangegeven. Een huurder dient zuinig om te gaan met energie en bij gebruik van airco of verwarming ramen en deuren gesloten te houden. Bij extreem energieverbruik is "W2A" gerechtigd u hiervoor aansprakelijk te stellen en de kosten aan de huurder te berekenen. Wij verwijzen naar de prijstabel op onze site waar de toeslagen vermeld worden bij extreem verbruik, vermijdt deze aldus tijdens uw verlijf. Op het moment dat met 2 maanden of langer in ons bungalowcomplex wenst te verblijven zullen de stroomkosten apart aangerekend worden.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>10</span> Maximaal aantal personen.</p>\r\n					<p>De beschrijving van de vakantiewoning op onze site vermeldt het maximaal aantal personen dat in de vakantiewoning mag overnachten. Dit aantal kan in geen geval overschreden worden, tenzij u schriftelijke toestemming heeft van "W2A". Bij overschrijding kan de huurder de verdere toegang tot het vakantiehuis worden ontzegd zonder aanspraak op restitutie van de huursom.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>11</span> Aankomst en vertrek.</p>\r\n					<p>De vakantiewoning kunt u vanaf 14.00 uur betrekken en u dient op de dag van vertrek de woning om uiterlijk 10.00 uur te verlaten. Andere tijden kunnen alleen in overleg met "W2A" geaccepteerd worden.</p>\r\n					<p>Tijdens uw verblijf dient u de vakantiewoning zelf schoon te houden en de was te doen. U kan natuurlijk steeds gebruik maken van onze schoonmaakservice. Het gehuurde vakantieverblijf dient altijd "bezemschoon" na afloop van uw verblijf door u te worden opgeleverd. Serviesgoed met toebehoren eveneens schoon terug in de kasten.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"<span>12</span> Overige kosten.</p>\r\n					<p>"W2A" rekent voor de verplichte eindschoonmaak &euro; 60 aan of 90&euro; voor de 3 slaapkamer bungalow, tenzij anders wordt aangegeven. "W2A" rekent een borg van &euro; 200 aan. Deze wordt na aftrek van eventuele schade, cash, per bank of giro terugbetaald na controle door de beheerder. Bij eventuele schade zal "W2A" de huurder schriftelijk of per e-mail hierover informeren.</p>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>13</span> Aansprakelijkheid.</p>\r\n					<p>"W2A" draagt geen aansprakelijkheid voor:</p>\r\n					<ul>\r\n					    <li>Diefstal, verlies of schade, van welke aard ook, tijdens of ten gevolge van een verblijf in een door u gehuurde vakantiewoning.</li>\r\n					    <li>Het onklaar geraken of buiten werking stellen van technische apparatuur en het uitvallen van stroom en/of water.</li>\r\n					    <li>Eventuele bouwactiviteiten in de omgeving van het gehuurde object.</li>\r\n					    <li>Medische-, verpleegkundige-, kinesitherapeutische- of enige verzorgingshandeling gesteld door derden.</li>\r\n					</ul>\r\n				</div>\r\n			</div>\r\n			<div class="row">\r\n				<div class="col-md-9 txt text-left col-centered">\r\n					<p class="tit"><span>14</span> Klachten.</p>\r\n					<p>Mocht de huurder onverhoopt klachten hebben tijdens diens verblijf, dan dient dit onverwijld aan "W2A" te worden doorgegeven, zo mogelijk telefonisch. Via overleg met de eigenaar zal dan worden getracht de klachten zo snel en goed mogelijk op te lossen. Kan een en ander niet naar tevredenheid van beide partijen worden geregeld, dan dienen de klachten zo spoedig mogelijk, doch uiterlijk binnen 14 dagen na afloop van de huurperiode, schriftelijk te worden bevestigd en toegelicht.</p>\r\n					<i>"W2A" is niet aansprakelijk voor zelfstandig (zonder medeweten en uitdrukkelijke toestemming van "W2A") ondernomen acties van de huurder.</i>\r\n					<br />\r\n					<i>"W2A" is niet verantwoordelijk voor de informatiegegevens van derden (op W2A-site) voor uitstappen en andere activiteiten ter plaatse.</i>\r\n				</div>\r\n			</div>', 'nl'),
@@ -187,7 +188,8 @@ INSERT INTO `page_translations` (`id`, `page_id`, `title`, `content`, `locale`) 
 (46, 17, 'Agenda', '', 'nl'),
 (47, 18, 'Verhuur', '<p>BEL NIET NAAR BARTJE</p>\r\n\r\n<p><a href="verhuurform">verhuurform</a></p>\r\n', 'nl'),
 (48, 19, 'Programmaboekje', '', 'nl'),
-(49, 20, 'verhuurformulier', '', 'nl');
+(49, 20, 'verhuurformulier', '', 'nl'),
+(50, 21, 'Leidingsploeg', '<p>Van wie krijg je leiding?</p>\r\n', 'nl');
 
 -- --------------------------------------------------------
 
@@ -248,8 +250,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `last_login_at`) VALUES
-(4, 'Ruben', 'rubendeswaef@gmail.com', '$1$jfb4jCPE$lUgRugJiyR/EE0ZUBFfhS.', NULL, '2016-03-01 16:23:51', '2016-03-01 15:23:51', '2016-03-01 15:23:51'),
-(5, 'admin', 'info@chirosintjob.be', '$2y$10$6WS.iVq2fLzq62tGAA6Zte.LnrEAfZC2eGZV4nXhdadJpngB.MSaa', NULL, '2016-03-02 12:44:51', '2016-03-02 11:44:51', '2016-03-02 11:44:51');
+(4, 'Ruben', 'rubendeswaef@gmail.com', '$1$jfb4jCPE$lUgRugJiyR/EE0ZUBFfhS.', NULL, '2016-03-11 15:08:44', '2016-03-11 14:08:44', '2016-03-11 14:08:44'),
+(5, 'admin', 'info@chirosintjob.be', '$2y$10$6WS.iVq2fLzq62tGAA6Zte.LnrEAfZC2eGZV4nXhdadJpngB.MSaa', 'zG3AufKErLj3CtgoIcCRPCfgTdAEJ6EvVu0bxUuiM0u3awI6dd6QPg9Tdx0N', '2016-03-10 17:40:02', '2016-03-10 16:40:02', '2016-03-10 16:40:02');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -333,12 +335,12 @@ ALTER TABLE `album_translations`
 -- AUTO_INCREMENT voor een tabel `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT voor een tabel `page_translations`
 --
 ALTER TABLE `page_translations`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT voor een tabel `posts`
 --
