@@ -1,7 +1,7 @@
  $(function() {
     if(window.isHomePage) {
-        console.log("homepage");
-
+        console.log("homepage without moving nav");
+        /*
         var navbar = $('#navbar-main'),
             //distance = navbar.offset().top,
             distance = $(window).height() - $('nav').height(),
@@ -16,6 +16,7 @@
                 navbar.removeClass('navbar-fixed-top').addClass('absolute-bottom');
             }
         }); 
+        */
     }
 
     $('a[href*="#"]:not([href="#"])').click(function() {

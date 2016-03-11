@@ -23,7 +23,12 @@
     <a name="home" id="home"></a>
     <div id="home-content">
         <div class="container cms-content">
-            {!! $page->content !!}
+            <div class="col-md-9">
+                {!! $page->content !!}
+            </div>
+            <div class="col-md-3 sidebar">
+                <h1>Sidebar</h1>
+            </div>
         </div>
     </div>
     
