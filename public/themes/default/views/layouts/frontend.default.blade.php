@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="/" class="navbar-brand">
-                        CMS title placeholder
+                        CMS titel
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
@@ -30,7 +30,7 @@
 
             @if($errors->any())
                 <div class="alert alert-danger">
-                    <strong>We found some errors!</strong>
+                    <strong>Er is iets mis gegaan!</strong>
 
                     <ul>
                         @foreach($errors->all() as $error)

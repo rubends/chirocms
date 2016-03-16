@@ -1,5 +1,5 @@
 <section id="main">
-    <div class="container">
+    <div class="container template-content">
     
         <h1>{{$page->title}}</h1>
 
@@ -27,6 +27,6 @@
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
         </p>
-        <a href="{{ url(route('terms')) }}">Terms and Conditions</a>
+        <a href="../public/auth/login">Login</a>
     </div>
 </footer>

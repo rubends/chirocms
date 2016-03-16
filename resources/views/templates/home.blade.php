@@ -23,10 +23,10 @@
     <a name="home" id="home"></a>
     <div id="home-content">
         <div class="container cms-content">
-            <div class="col-md-9">
+            <div class="col-md-8 mainbar">
                 {!! $page->content !!}
             </div>
-            <div class="col-md-3 sidebar">
+            <div class="col-md-4 sidebar">
                 <h1>Sidebar</h1>
             </div>
         </div>
@@ -36,7 +36,7 @@
     <footer>
         <div class="container">
             <p>@lang('general.copyright')</p>
-            <a href="{{ url(route('terms')) }} ">@lang('general.tos')</a>
+            <a href="../public/auth/login">Login</a>
         </div>
     </footer>
 </div>

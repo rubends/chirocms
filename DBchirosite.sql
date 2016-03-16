@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 11 mrt 2016 om 17:14
+-- Gegenereerd op: 15 mrt 2016 om 20:22
 -- Serverversie: 5.6.26
 -- PHP-versie: 5.6.12
 
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `id197075_cmsv2`
@@ -250,7 +250,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`, `last_login_at`) VALUES
-(4, 'Ruben', 'rubendeswaef@gmail.com', '$1$jfb4jCPE$lUgRugJiyR/EE0ZUBFfhS.', NULL, '2016-03-11 15:08:44', '2016-03-11 14:08:44', '2016-03-11 14:08:44'),
+(4, 'Ruben', 'rubendeswaef@gmail.com', '$1$jfb4jCPE$lUgRugJiyR/EE0ZUBFfhS.', NULL, '2016-03-13 12:51:53', '2016-03-13 11:51:53', '2016-03-13 11:51:53'),
 (5, 'admin', 'info@chirosintjob.be', '$2y$10$6WS.iVq2fLzq62tGAA6Zte.LnrEAfZC2eGZV4nXhdadJpngB.MSaa', 'zG3AufKErLj3CtgoIcCRPCfgTdAEJ6EvVu0bxUuiM0u3awI6dd6QPg9Tdx0N', '2016-03-10 17:40:02', '2016-03-10 16:40:02', '2016-03-10 16:40:02');
 
 --

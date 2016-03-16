@@ -1,6 +1,6 @@
 @if($errors->any())
     <div class="alert alert-danger">
-        <strong>We found some errors!</strong>
+        <strong>Er is iets mis gegaan!</strong>
 
         <ul>
             @foreach($errors->all() as $error)

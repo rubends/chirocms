@@ -6342,11 +6342,39 @@ h1, a {
 a:hover {
     color:#FF0600;
 }
-#content, #home-content, #main {
+#content, #home-content, #main, body, .error-status {
   background-color: #E6E0DD !important;
   color: #293144 !important;
 }
 
-.sidebar {
-  border-left: 2px solid #293144;
+.mainbar {
+  border-right: 2px solid #293144;
+}
+
+.cms-content, .template-content {
+  background-color: white;
+  min-height: 100vh;
+}
+#home-content .cms-content {
+  padding-top: 5%;
+}
+#home-content, #main {
+  padding: 0 !important;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #BC2A33 !important;
+    border-color: #293144 !important;
+}
+footer {
+  margin-top: 0px !important;
+}
+.carousel-caption {
+  color: #E6E0DD;;
+}
+.dropdown-menu li a:hover {
+  color: #293144;
 }

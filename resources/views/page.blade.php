@@ -31,7 +31,7 @@
 	            <p>
 	                Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
 	            </p>
-            	<a href="{{ url(route('terms')) }} ">@lang('general.tos')</a>
+            	<a href="../public/auth/login">Login</a>
 	        </div>
 	    </footer>
 
