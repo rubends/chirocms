@@ -18,7 +18,7 @@
                     <li><a href="{{ route('backend.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ route('backend.users.index') }}">Gebruikers</a></li>
                     <li><a href="{{ route('backend.pages.index') }}">Paginas</a></li>
-                    {{-- <li><a href="{{ route('backend.blog.index') }}">Blog</a></li> --}}
+                    <li><a href="{{ route('backend.blog.index') }}">Blog</a></li>
                     <li><a href="{{ route('backend.albums.index') }}">Albums</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

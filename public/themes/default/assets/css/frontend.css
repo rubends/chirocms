@@ -6347,8 +6347,8 @@ a:hover {
   color: #293144 !important;
 }
 
-.mainbar {
-  border-right: 2px solid #293144;
+.sidebar {
+  border-left: 2px solid #293144;
 }
 
 .cms-content, .template-content {
@@ -6356,7 +6356,7 @@ a:hover {
   min-height: 100vh;
 }
 #home-content .cms-content {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 #home-content, #main {
   padding: 0 !important;
@@ -6377,4 +6377,18 @@ footer {
 }
 .dropdown-menu li a:hover {
   color: #293144;
+}
+
+#intro-title h1 {
+  color:white;
+}
+.blogcontent {
+  background-color: white;
+  min-height: 100vh;
+}
+.container {
+  padding:0 5% 0 5%;
+}
+#home-content .container {
+  padding-right: 0 !important;
 }

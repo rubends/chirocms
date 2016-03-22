@@ -14,10 +14,10 @@ return [
     'shared_folder_name' => 'shares',
     'thumb_folder_name'  => 'thumbs',
 
-    'images_dir'         => '../www/photos/', // 'public/photos/',//'../www/photos/',
+    'images_dir'         => 'public/photos/', // 'public/photos/',//'../www/photos/',
     'images_url'         => '/photos/',
 
-    'files_dir'          => '../www/files/', // 'public/files/',//'../www/files/',
+    'files_dir'          => 'public/files/', // 'public/files/',//'../www/files/',
     'files_url'          => '/files/',
 
     'file_type_array'         => [
