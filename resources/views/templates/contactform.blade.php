@@ -12,7 +12,7 @@
 
         <div class="form-group">
             {!! Form::label('Naam') !!}
-            {!! Form::text('Naam', null, ['class' => 'form-control']) !!}
+            {!! Form::text('name', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -22,7 +22,7 @@
 
         <div class="form-group">
             {!! Form::label('Bericht') !!}
-            {!! Form::textarea('Bericht', null, ['class' => 'form-control']) !!}
+            {!! Form::textarea('message', null, ['class' => 'form-control']) !!}
         </div>
 
         {!! Form::submit('Verzenden', ['class' => 'btn btn-primary']) !!}
@@ -35,7 +35,7 @@
     <div class="container">
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
+            <a href="../public/auth/login">Login</a>
         </p>
-        <a href="../public/auth/login">Login</a>
     </div>
 </footer>

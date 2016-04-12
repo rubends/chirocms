@@ -26,7 +26,7 @@
     <div class="container">
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
+            <a href="../public/auth/login">Login</a>
         </p>
-        <a href="../public/auth/login">Login</a>
     </div>
 </footer>

@@ -23,6 +23,6 @@ class ContactController extends Controller
 		    $message->to(config('cms.email'));
 		});
 
-    	return redirect(route('contact.form'))->with('status', 'Thank you. Your message was sent.');
+    	return redirect(route('contact.form'))->with('status', 'Bedankt, uw bericht werd verstuurd!');
     }
 }

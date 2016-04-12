@@ -91,7 +91,7 @@
             <div class="step">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="g-recaptcha col-md-6" data-sitekey="6LeYyBUTAAAAAHk73x8soDGqTXKcDYuhIUKs1oNP"></div>
+                        <div class="g-recaptcha col-md-6" data-sitekey="6LcLkRsTAAAAAGO9Wm-Eb47RixjKxXmtHnKzSgx6"></div>
                     </div>
                     <div class="col-md-6 text-right">
                         {!! Form::submit(Lang::get('booking.book'), ['class' => 'btn btn-primary btn-lg']) !!}<br/>
@@ -109,7 +109,7 @@
     <div class="container">
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
+            <a href="../public/auth/login">Login</a>
         </p>
-        <a href="../public/auth/login">Login</a>
     </div>
 </footer>

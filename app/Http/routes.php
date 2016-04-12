@@ -60,7 +60,7 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::post('booking/submit', [
 		'as' => 'booking.submit', 
-		'uses' => 'BookingController@submit'
+		'uses' => 'VerhuurController@submit'
 	]);
 	
 

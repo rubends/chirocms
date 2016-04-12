@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'noreply@chirosintjob.com', 'name' => 'chirosintjob'],
+    'from' => ['address' => 'noreply@chirosintjob.be', 'name' => 'chirosintjob'],
 
     /*
     |--------------------------------------------------------------------------

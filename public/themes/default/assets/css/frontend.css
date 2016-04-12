@@ -6326,13 +6326,7 @@ footer p {
 /*# sourceMappingURL=frontend.css.map */
 
 /* CHIRO SINT JOB CSS */
-#navbar-main, footer {
-  background-color: #293144;
-  color: white;
-}
-#navbar-main a:hover {
-  color:white;
-}
+/* MAIN */
 h1, a {
   color:#BC2A33;
 }
@@ -6346,20 +6340,9 @@ a:hover {
   background-color: #E6E0DD !important;
   color: #293144 !important;
 }
-
-.sidebar {
-  border-left: 2px solid #293144;
-}
-
 .cms-content, .template-content {
   background-color: white;
   min-height: 100vh;
-}
-#home-content .cms-content {
-  padding-top: 3%;
-}
-#home-content, #main {
-  padding: 0 !important;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -6372,23 +6355,58 @@ a:hover {
 footer {
   margin-top: 0px !important;
 }
-.carousel-caption {
-  color: #E6E0DD;;
+.container {
+  padding:0 5% 0 5%;
+}
+footer a{
+  float: right;
+}
+
+/* NAV */
+
+#navbar-main, footer {
+  background-color: #293144;
+  color: white;
+}
+#navbar-main a:hover {
+  color:white;
 }
 .dropdown-menu li a:hover {
   color: #293144;
 }
 
+/* HOME */
+.sidebar {
+  border-left: 2px solid #293144;
+}
+#home-content .cms-content {
+  padding-top: 3%;
+}
+#home-content, #main {
+  padding: 0 !important;
+}
 #intro-title h1 {
   color:white;
 }
+#home-content .container {
+  padding-right: 0 !important;
+}
+
+/* PROGRAMMABOEKJE */
+.carousel-caption {
+  color: #E6E0DD;
+}
+.programmaboekje .col-md-4 h2{
+  font-size: 200%;
+  transition: all .2s ease-in-out;
+}
+.programmaboekje .col-md-4:hover h2{
+  font-size: 300%;
+  transform: rotate(10deg);
+}
+
+/* BLOG */
 .blogcontent {
   background-color: white;
   min-height: 100vh;
-}
-.container {
-  padding:0 5% 0 5%;
-}
-#home-content .container {
-  padding-right: 0 !important;
 }

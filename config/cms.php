@@ -18,6 +18,6 @@ return [
 
 	],
 
-	'email' => 'info@chirosintjob.com'
+	'email' => 'info@chirosintjob.be'
 
 ];

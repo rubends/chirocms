@@ -61,8 +61,7 @@
 
     <footer>
         <div class="container">
-            <p>@lang('general.copyright')</p>
-            <a href="../public/auth/login">Login</a>
+            <p>@lang('general.copyright') <a href="../public/auth/login">Login</a></p>
         </div>
     </footer>
 </div>

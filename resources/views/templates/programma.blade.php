@@ -1,5 +1,5 @@
 <section id="main">
-    <div class="container template-content">
+    <div class="container template-content programmaboekje">
     
         <h1>{{$page->title}}</h1>
 
@@ -74,7 +74,7 @@
     <div class="container">
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
+            <a href="../public/auth/login">Login</a>
         </p>
-        <a href="../public/auth/login">Login</a>
     </div>
 </footer>
