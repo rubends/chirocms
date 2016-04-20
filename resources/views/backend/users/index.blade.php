@@ -10,6 +10,8 @@
             <tr>
                 <th>Name</th>
                 <th>E-mail</th>
+                <th>Gsmnummer</th>
+                <th>Type</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -21,6 +23,18 @@
                         <a href="{{ route('backend.users.edit', $user->id) }}">{{ $user->name }}</a>
                     </td>
                     <td>{{ $user->email }}</td>
+                    <td>{{ $user->gsm }}</td>
+                    <td>
+                        @if ($user->type === 0)
+                            onbekend
+                        @elseif ($user->type === 1) 
+                            leiding
+                        @elseif ($user->type === 2) 
+                            oudleiding
+                        @elseif ($user->type === 3) 
+                            admin
+                        @endif
+                    </td>
                     <td>
                         <a href="{{ route('backend.users.edit', $user->id) }}">
                             <span class="glyphicon glyphicon-edit"></span>

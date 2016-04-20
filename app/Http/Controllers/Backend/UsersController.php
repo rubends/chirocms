@@ -46,7 +46,7 @@ class UsersController extends Controller
      */
     public function store(Requests\StoreUserRequest $request)
     {
-        $this->users->create($request->only('name', 'email', 'password'));
+        $this->users->create($request->only('name', 'email', 'password', 'type', 'gsm'));
 
         return redirect(route('backend.users.index'))->with('stats', 'The user is created!');
     }
@@ -75,7 +75,7 @@ class UsersController extends Controller
     {
         $user = $this->users->findOrFail($id);
 
-        $user->fill($request->only('name', 'email', 'password'))->save();
+        $user->fill($request->only('name', 'email', 'password', 'type', 'gsm'))->save();
 
         return redirect(route('backend.users.edit', $user->id))->with('status', 'The user has been updated!');
     }

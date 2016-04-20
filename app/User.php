@@ -15,7 +15,7 @@ class User extends Authenticatable implements HasPresenter
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'type', 'gsm'
     ];
 
     protected $dates = ['last_login_at'];

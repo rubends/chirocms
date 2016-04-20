@@ -19,6 +19,16 @@
     </div>
 
     <div class="form-group">
+        {!! Form::label('Gsmnummer') !!}
+        {!! Form::text('gsm', $user->gsm, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
+        {!! Form::label('type') !!}
+        {!! Form::select('type', array('1' => 'Leiding', '2' => 'Oudleiding', '3' => 'Admin'), $user->type, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
         {!! Form::label('password') !!}
         {!! Form::password('password', ['class' => 'form-control']) !!}
     </div>

@@ -51,6 +51,23 @@ Route::group(['middleware' => ['web']], function () {
 	]);
 
 	/**
+	 * leidingslokaal routes
+	 */
+	Route::get('leidingslokaal', [
+		'as' => 'leidingslokaal.leidingsboard',
+		'uses' => 'Leidingslokaal\LeidingsboardController@index'
+	]);
+
+	Route::resource('leidingslokaal/verslagen', 'Leidingslokaal\VerslagenController', ['except' => ['show']]);
+	Route::get('leidingslokaal/verslagen/{verslagen}/confirm', [
+		'as' => 'leidingslokaal.verslagen.confirm',
+		'uses' => 'Leidingslokaal\VerslagenController@confirm'
+	]);
+
+
+
+
+	/**
 	 * Frontend default routes
 	 */
 	Route::post('contact/submit', [

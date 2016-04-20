@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class UpdateUserRequest extends Request
+class StoreVerslagRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,10 @@ class UpdateUserRequest extends Request
     public function rules()
     {
         return [
+            'poster' => ['required'],
             'name' => ['required'],
-            'email' => ['required', 'email', 'unique:users,email,'.$this->route('users')],
-            'password' => ['required_with:password_confirmation', 'confirmed'],
-            'type' => ['required'],
-            'gsm' => ['required']
+            'info',
+            'verslag' => ['required']
         ];
     }
 }
