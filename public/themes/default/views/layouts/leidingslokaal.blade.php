@@ -17,7 +17,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('leidingslokaal.verslagen.index') }}">LK verslagen</a></li>
                     <li><a href="{--{ route('') }--}">Documenten</a></li>
-                    <li><a href="{--{ route('') }--}">Boekje</a></li>
+                    <li><a href="{{ route('leidingslokaal.boekje.index') }}">Boekje</a></li>
                     <li><a href="{--{ route('') }--}">Contactgegevens</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

@@ -64,6 +64,12 @@ Route::group(['middleware' => ['web']], function () {
 		'uses' => 'Leidingslokaal\VerslagenController@confirm'
 	]);
 
+	Route::resource('leidingslokaal/boekje', 'Leidingslokaal\BoekjesController', ['except' => ['show']]);
+	Route::get('leidingslokaal/boekje/{boekje}/confirm', [
+		'as' => 'leidingslokaal.boekjes.confirm',
+		'uses' => 'Leidingslokaal\BoekjesController@confirm'
+	]);
+
 
 
 

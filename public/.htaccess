@@ -15,3 +15,7 @@
     RewriteRule ^ index.php [L]
 
 </IfModule>
+#pdfcaching disabled
+<FilesMatch "\.(txt|pdf)$">
+  Header set Cache-Control "max-age=0, no-store, must-revalidate"
+</FilesMatch>

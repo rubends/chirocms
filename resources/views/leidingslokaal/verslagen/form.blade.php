@@ -11,7 +11,7 @@
 
     <div class="form-group">
         {!! Form::label('Uw naam') !!}
-        {!! Form::text('poster', $admin->name, ['class' => 'form-control', 'disabled']) !!}
+        {!! Form::text('poster', $admin->name, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">
@@ -30,7 +30,7 @@
     </div>
 
     {!! Form::submit($verslag->exists ? 'Save Verslag' : 'Nieuw verslag maken', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('leidingslokaal.verslagen.index') }}" class="">of ge terug naar alleverslagen.</a>
+    <a href="{{ route('leidingslokaal.verslagen.index') }}" class="">of ga terug naar alle verslagen.</a>
 
     {!! Form::close() !!}
 @endsection
