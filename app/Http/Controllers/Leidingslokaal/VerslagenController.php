@@ -26,7 +26,7 @@ class VerslagenController extends Controller
      */
     public function index()
     {
-        $verslagen = $this->verslagen->paginate(20);
+        $verslagen = $this->verslagen->get();
 
         return view('leidingslokaal.verslagen.index', compact('verslagen'));
     }
@@ -63,7 +63,8 @@ class VerslagenController extends Controller
 
                 $destinationPath = '../public/verslagen';
                 $extension = Input::file('verslag')->getClientOriginalExtension();
-                $fileName = md5(time()).'.'.$extension;
+                $originalName = Input::file('document')->getClientOriginalName();
+                $fileName = $originalName.md5(time()).'.'.$extension;
                 Input::file('verslag')->move($destinationPath, $fileName);
 
                 //$this->verslagen->create($request->only('poster', 'name', 'info'));

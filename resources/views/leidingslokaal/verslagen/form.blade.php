@@ -11,7 +11,7 @@
 
     <div class="form-group">
         {!! Form::label('Uw naam') !!}
-        {!! Form::text('poster', $admin->name, ['class' => 'form-control']) !!}
+        {!! Form::text('poster', $admin->name, ['class' => 'form-control', 'readonly']) !!}
     </div>
 
     <div class="form-group">

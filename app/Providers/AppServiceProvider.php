@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
 
         // Add composers to some views
         $this->app['view']->composer(['layouts.*', 'page'], Composers\AddStatusMessage::class);
-        $this->app['view']->composer(['layouts.*', 'leidingslokaal.verslagen.form'], Composers\AddAdminUser::class);
+        $this->app['view']->composer(['layouts.*', 'leidingslokaal.verslagen.form', 'leidingslokaal.documents.form'], Composers\AddAdminUser::class);
         $this->app['view']->composer('layouts.frontend', Composers\InjectPages::class);
 
 

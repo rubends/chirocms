@@ -70,6 +70,19 @@ Route::group(['middleware' => ['web']], function () {
 		'uses' => 'Leidingslokaal\BoekjesController@confirm'
 	]);
 
+	Route::resource('leidingslokaal/contactgegevens', 'Leidingslokaal\ContactgegevensController', ['except' => ['show']]);
+	Route::get('leidingslokaal/contactgegevens/{contactgegevens}/confirm', [
+		'as' => 'leidingslokaal.contactgegevens.confirm',
+		'uses' => 'Leidingslokaal\ContactgegevensController@confirm'
+	]);
+
+	Route::resource('leidingslokaal/documents', 'Leidingslokaal\DocumentsController', ['except' => ['show']]);
+	Route::get('leidingslokaal/documents/{documents}/confirm', [
+		'as' => 'leidingslokaal.documents.confirm',
+		'uses' => 'Leidingslokaal\DocumentsController@confirm'
+	]);
+
+
 
 
 

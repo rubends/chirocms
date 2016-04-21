@@ -28,5 +28,4 @@
         </tbody>
     </table>
 
-    {!! $verslagen->render() !!}
 @endsection

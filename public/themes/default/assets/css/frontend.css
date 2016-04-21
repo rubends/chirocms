@@ -5906,7 +5906,6 @@ section#main {
 #intro-title p {
   font-size: 1.4em;
   font-style: italic;
-  line-height: 0;
   margin: 70px auto;
   text-align: center; }
 
@@ -6011,9 +6010,9 @@ nav.navbar.navbar-fixed-top {
   height: auto; }
 
 #home-content {
-  text-align: center;
   padding: 50px 0;
   background-color: white; }
+
 
 h1 {
   text-align: center;
@@ -6358,6 +6357,9 @@ footer {
 .container {
   padding:0 5% 0 5%;
 }
+#home-content .container {
+  padding: 0;
+}
 footer a{
   float: right;
 }
@@ -6378,6 +6380,7 @@ footer a{
 /* HOME */
 .sidebar {
   border-left: 2px solid #293144;
+  text-align: center;
 }
 #home-content .cms-content {
   padding-top: 3%;

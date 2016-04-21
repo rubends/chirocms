@@ -22,6 +22,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul>
                     @include('partials.navigation')
+                    <li><a href="../public/leidingslokaal">Digitaal Leidingslokaal</a></li>
                 </ul>
             </div>
     </nav>  

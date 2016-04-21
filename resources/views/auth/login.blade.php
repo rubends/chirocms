@@ -2,7 +2,7 @@
 
 @section('title', 'Login')
 
-@section('heading', 'Welcome, please login.')
+@section('heading', 'Het leidingslokaal is enkel voor de leiding.')
 
 @section('content')
     {!! Form::open() !!}
@@ -17,9 +17,13 @@
         {!! Form::password('password', ['class' => 'form-control']) !!}
     </div>
 
-    {!! Form::submit('Login', ['class' => 'btn btn-primary']) !!}
+    <div class="form-group">
+        {!! Form::submit('Login', ['class' => 'btn btn-primary']) !!}
 
-    <a href="{{ route('auth.password.email') }}" class="small">Forgot password?</a>
+        <a href="{{ route('auth.password.email') }}" class="small">Forgot password?</a>
+    </div>
+
+    <a class="btn btn-default btn-block" href="/">Terug naar de site</a>
 
     {!! Form::close() !!}
 @endsection

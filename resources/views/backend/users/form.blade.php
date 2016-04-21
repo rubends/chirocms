@@ -9,7 +9,7 @@
     ]) !!}
 
     <div class="form-group">
-        {!! Form::label('name') !!}
+        {!! Form::label('Volledige naam') !!}
         {!! Form::text('name', null, ['class' => 'form-control']) !!}
     </div>
 
@@ -25,7 +25,7 @@
 
     <div class="form-group">
         {!! Form::label('type') !!}
-        {!! Form::select('type', array('1' => 'Leiding', '2' => 'Oudleiding', '3' => 'Admin'), $user->type, ['class' => 'form-control']) !!}
+        {!! Form::select('type', array('1' => 'Leiding', '2' => 'Oudleiding', '3' => 'Admin', '4' => 'VB', '5' => 'Vriendekring'), $user->type, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">
