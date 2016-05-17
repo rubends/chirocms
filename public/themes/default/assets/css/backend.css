@@ -5965,3 +5965,13 @@ body {
   padding-bottom: 2rem; }
 
 /*# sourceMappingURL=backend.css.map */
+
+/* CUSTOM */
+#auth {
+  background: url("../images/authback.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}

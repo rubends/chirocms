@@ -3163,7 +3163,7 @@ tbody.collapse.in {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #262626;
+  color: #293144 !important;
   background-color: #f5f5f5; }
 
 /*.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
@@ -5832,8 +5832,18 @@ section#main {
   margin-bottom: 25px; }
 
 .fs-bg {
-  background: url("../images/background.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background-image: url("../images/background.jpg"); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;     
+  background-size: cover;   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='scale')";
+  min-height: 100%;
+}
 
 .wrapper {
   width: 1024px;
@@ -5914,7 +5924,7 @@ section#main {
   border: none; }
 
 .navbar-toggle {
-  float: left; }
+  float: right; }
 
 nav.navbar.absolute-bottom {
   position: absolute;
@@ -5929,7 +5939,7 @@ nav.navbar.navbar-fixed-top {
   background-color: white; }
 
 .navbar.navbar-fixed-top .navbar-toggle .icon-bar {
-  background-color: black; }
+  background-color: white; }
 
 /*.navbar .navbar-nav {
   display: inline-block;
@@ -6247,8 +6257,7 @@ footer p {
   nav ul li:hover {
     font-weight: bold;
     background-color: #f3f3f3; }
-  nav ul li a {
-    padding: 17px 120px; }
+
   nav ul li a:hover {
     text-decoration: none;
     color: #232323; }
@@ -6360,7 +6369,7 @@ footer {
 #home-content .container {
   padding: 0;
 }
-footer a{
+.cmslinks{
   float: right;
 }
 
@@ -6377,9 +6386,12 @@ footer a{
   color: #293144;
 }
 
+.dropdown-menu li {
+  display: block;
+}
+
 /* HOME */
 .sidebar {
-  border-left: 2px solid #293144;
   text-align: center;
 }
 #home-content .cms-content {
@@ -6413,3 +6425,4 @@ footer a{
   background-color: white;
   min-height: 100vh;
 }
+

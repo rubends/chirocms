@@ -15,7 +15,7 @@ class VerhuurController extends Controller
     	$data = ['booking'=>$request->all()];
 		Mail::send('emails.booking.details', $data, function ($message) {
 		    $message->from(config('mail.from.address'), config('mail.from.name'));
-			$message->subject('New booking request');
+			$message->subject('Nieuwe verhuuraanvraag');
 		    $message->to(config('cms.email'));
 		});
 
@@ -27,6 +27,6 @@ class VerhuurController extends Controller
 
 		// booking confirmation
 
-    	return redirect(route('booking.form'))->with('status', trans('booking.success_message'));
+    	return redirect(url('/verhuurform'))->with('status', trans('Je verhuuraanvraag is goed verzonden. We nemen snel contact met u op.'));
     }
 }

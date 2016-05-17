@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" type="text/css" href="{{ theme('css/backend.css') }}">
     </head>
-    <body>
+    <body id="auth">
         <div class="container">
             <div class="row vertical-center">
                 <div class="col-md-4"></div>

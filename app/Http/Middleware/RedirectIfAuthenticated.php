@@ -18,7 +18,13 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect(route('backend.dashboard'));
+            if ($request->input('type') == '1') {
+                return redirect(route('leidingslokaal.leidingsboard'));
+            }
+            else if ($request->input('type') == '3') {
+                return redirect(route('backend.dashboard'));
+            }
+            
         }
 
         return $next($request);

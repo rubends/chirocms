@@ -13,13 +13,14 @@
     <body>
         <nav class="navbar navbar-static-top navbar-inverse">
             <div class="container">
-                <div class="navbar-header"><a href="/" class="navbar-brand">TERUG</a></div>
+                <div class="navbar-header"><a href="/" class="navbar-brand">www.chirosintjob.be</a></div>
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('backend.dashboard') }}">Dashboard</a></li>
                     <li><a href="{{ route('backend.users.index') }}">Gebruikers</a></li>
                     <li><a href="{{ route('backend.pages.index') }}">Paginas</a></li>
                     <li><a href="{{ route('backend.blog.index') }}">Blog</a></li>
                     <li><a href="{{ route('backend.albums.index') }}">Albums</a></li>
+                    <li><a href="{{ route('leidingslokaal.leidingsboard') }}">Digitaal leidingslokaal</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><span class="navbar-text">Hallo, {{ $admin->name }}</span></li>

@@ -19,7 +19,7 @@ class ContactController extends Controller
     	];
 		Mail::send('emails.contact', $data, function ($message) {
 		    $message->from(config('mail.from.address'), config('mail.from.name'));
-			$message->subject('Contact message');
+			$message->subject('Bericht op chirosintjob.be');
 		    $message->to(config('cms.email'));
 		});
 

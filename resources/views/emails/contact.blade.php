@@ -1,4 +1,4 @@
-<strong>Name</strong>: {{ $name }}<br />
+<strong>Naam</strong>: {{ $name }}<br />
 <strong>Email</strong>: {{ $email }}<br />
-<strong>Message</strong>: <br />
+<strong>Bericht</strong>: <br />
 {!! nl2br(e($messagebody)) !!}

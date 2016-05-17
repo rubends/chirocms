@@ -13,12 +13,16 @@
     <body>
         <nav class="navbar navbar-static-top navbar-inverse">
             <div class="container">
-                <div class="navbar-header"><a href="/" class="navbar-brand">SITE</a></div>
+                <div class="navbar-header"><a href="/" class="navbar-brand">www.chirosintjob.be</a></div>
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('leidingslokaal.verslagen.index') }}">LK verslagen</a></li>
                     <li><a href="{{ route('leidingslokaal.documents.index') }}">Documenten</a></li>
                     <li><a href="{{ route('leidingslokaal.boekje.index') }}">Boekje</a></li>
                     <li><a href="{{ route('leidingslokaal.contactgegevens.index') }}">Contactgegevens</a></li>
+                    {{-- <li><a href="{{ route('leidingslokaal.accounts.edit', $admin->id) }}">Account</a></li> --}}
+                    @if($admin->type == 3)
+                         <li><a href="{{ route('backend.dashboard') }}">CMS</a></li>
+                    @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><span class="navbar-text">Hallo, {{ $admin->name }}</span></li>

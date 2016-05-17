@@ -26,7 +26,7 @@ class VerhuurFormRequest extends Request
         return [
             'start_date' => ['date', 'required', 'after:today'],
             'end_date' => ['date', 'required', 'after:start_date'],
-            'housesize' => 'required',
+            'vereniging' => 'required',
             'firstname' => 'required',
             'lastname' => 'required',
             'street' => 'required',
@@ -36,8 +36,6 @@ class VerhuurFormRequest extends Request
             'phone' => ['required','regex:/^(?:\+\d{1,3}|0\d{1,3}|00\d{1,2})?(?:\s?\(\d+\))?(?:[-\/\s.]|\d)+$/'],
             'gsm' => ['required','regex:/^(?:\+\d{1,3}|0\d{1,3}|00\d{1,2})?(?:\s?\(\d+\))?(?:[-\/\s.]|\d)+$/'],
             'email' => 'required|email',
-            'firstname1' => 'required',
-            'lastname1' => 'required',
             'g-recaptcha-response' => 'recaptcha',
         ];
     }

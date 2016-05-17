@@ -109,7 +109,7 @@
     <div class="container">
         <p>
             Copyright &copy; 2016 Chiro Sint-Job - All rights reserved
-            <a href="../public/auth/login">Login</a>
+            <div class="cmslinks"><a href="../public/auth/login">Login</a></div>
         </p>
     </div>
 </footer>

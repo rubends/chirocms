@@ -82,6 +82,12 @@ Route::group(['middleware' => ['web']], function () {
 		'uses' => 'Leidingslokaal\DocumentsController@confirm'
 	]);
 
+	Route::resource('leidingslokaal/accounts', 'Leidingslokaal\AccountsController', ['except' => ['show']]);
+	Route::get('leidingslokaal/accounts/{accounts}/confirm', [
+		'as' => 'leidingslokaal.accounts.confirm',
+		'uses' => 'Leidingslokaal\AccountsController@confirm'
+	]);
+
 
 
 

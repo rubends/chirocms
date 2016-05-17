@@ -7,14 +7,17 @@ use App\Verslag;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
+use Mail;
+use App\User;
 
 
 class VerslagenController extends Controller
 {
 	protected $verslagen;
 
-	public function __construct(Verslag $verslagen) {
+	public function __construct(Verslag $verslagen, User $users) {
 		$this->verslagen = $verslagen;
+        $this->users = $users;
 
 		parent::__construct();
 	}
@@ -63,16 +66,31 @@ class VerslagenController extends Controller
 
                 $destinationPath = '../public/verslagen';
                 $extension = Input::file('verslag')->getClientOriginalExtension();
-                $originalName = Input::file('document')->getClientOriginalName();
+                $originalName = Input::file('verslag')->getClientOriginalName();
                 $fileName = $originalName.md5(time()).'.'.$extension;
                 Input::file('verslag')->move($destinationPath, $fileName);
 
-                //$this->verslagen->create($request->only('poster', 'name', 'info'));
-                /*$this->verslagen->fill(
-                    $request->only('poster', 'name', 'info')
-                )->save();*/
                 $this->verslagen->create(['verslag' => $fileName] + $request->only('poster', 'name', 'info'));
 
+                $leidings = $this->users->where('type', 3)->orWhere('type', 1)->get();
+
+                foreach ($leidings as $leiding) {
+                
+                    $data = [
+                        'name' => $request->input('poster'),
+                        'title' => $request->input('name'),
+                        'info' => $request->input('info'),
+                    ];
+
+                    Mail::queue('emails.verslagmail', $data, function ($message) use ($leiding, $destinationPath, $fileName, $originalName) {
+                        $message->attach($destinationPath.'/'.$fileName, ['as' => $originalName]);
+                        $message->from(config('cms.email'));
+                        $message->subject('Nieuw LKverslag');
+                        $message->to($leiding->email);
+                    });
+
+                }
+                
                 return redirect(route('leidingslokaal.verslagen.index'))->with('stats', 'Het verslag is toegevoegd!');
 
             }
