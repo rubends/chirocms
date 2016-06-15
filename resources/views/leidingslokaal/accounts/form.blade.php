@@ -22,7 +22,7 @@
         {!! Form::label('Gsmnummer') !!}
         {!! Form::text('gsm', $user->gsm, ['class' => 'form-control']) !!}
     </div>
-
+    <p>Passwoord invullen of vernieuwen:</p>
     <div class="form-group">
         {!! Form::label('password') !!}
         {!! Form::password('password', ['class' => 'form-control']) !!}

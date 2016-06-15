@@ -1051,7 +1051,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Verdana, "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -5130,7 +5130,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5243,7 +5243,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5787,20 +5787,16 @@ button.close {
 .cms-content ul li {
   text-align: left; }
 
-.cms-content h2 {
+.cms-content h2, .template-content h2 {
   font-weight: bold;
-  font-family: "Pier Sans", sans-serif;
-  font-size: 1.5em; }
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;}
 
-.cms-content h3 {
+.cms-content h3, .template-content h3 {
   font-weight: 400;
-  font-family: "Pier Sans", sans-serif;
-  font-size: 1.2em;
-  font-style: italic; }
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif; }
 
 /*****************************************/
 body {
-  font-family: "Helvetica", Verdana, sans-serif;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -5808,7 +5804,8 @@ body {
   padding-top: 50px; }
 
 a {
-  font-family: Verdana, "Helvetica", sans-serif; }
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.5em; }
 
 li {
   text-align: center; }
@@ -5889,7 +5886,7 @@ section#main {
 
 #intro-title {
   position: absolute;
-  font-family: "Pier Sans", sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   color: white;
   margin: 0 auto;
   left: 0;
@@ -5898,9 +5895,9 @@ section#main {
 
 #intro-title h1 {
   font-weight: 600;
-  font-size: 2.3em;
+  font-size: 4em;
   text-align: center;
-  font-family: "Pier Sans", sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   margin: 50px 10px; }
 
 #intro-title h1 span {
@@ -5914,7 +5911,7 @@ section#main {
   margin: -40px auto; }
 
 #intro-title p {
-  font-size: 1.4em;
+  font-size: 3em;
   font-style: italic;
   margin: 70px auto;
   text-align: center; }
@@ -6027,8 +6024,7 @@ nav.navbar.navbar-fixed-top {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-family: "Pier Sans", sans-serif;
-  font-size: 2.0em;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   margin: 25px 0; }
 
 /**/
@@ -6191,7 +6187,7 @@ form p span {
 
 #guest-form h1 {
   text-align: center;
-  font-family: "Pier Sans", sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 2.5em;
   margin: 50px 0; }
@@ -6228,7 +6224,7 @@ form p span {
 /* Voorwaarden */
 .tit {
   margin-top: 25px;
-  font-family: "Pier Sans", sans-serif;
+  font-family: 'Bubblegum Sans', Helvetica, Arial, sans-serif;
   font-size: 1.25em; }
 
 .tit span {
@@ -6336,7 +6332,7 @@ footer p {
 /* CHIRO SINT JOB CSS */
 /* MAIN */
 h1, a {
-  color:#BC2A33;
+  color:#e41c38;
 }
 #content a {
   text-decoration: underline;
@@ -6345,20 +6341,24 @@ a:hover {
     color:#FF0600;
 }
 #content, #home-content, #main, body, .error-status {
-  background-color: #E6E0DD !important;
+  background-color: rgba(230, 224, 221, 0) !important;
   color: #293144 !important;
 }
 .cms-content, .template-content {
   background-color: white;
   min-height: 100vh;
 }
-.btn-primary,
+.btn-primary {
+    background-color: #e41c38;
+    border-color: #293144;
+}
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
-.btn-primary:focus {
-    background-color: #BC2A33 !important;
-    border-color: #293144 !important;
+.btn-primary:focus
+{
+  color: #e41c38;
+  background-color: white;
 }
 footer {
   margin-top: 0px !important;
@@ -6368,6 +6368,7 @@ footer {
 }
 #home-content .container {
   padding: 0;
+  border-radius: 10px 10px 0 0;
 }
 .cmslinks{
   float: right;
@@ -6376,11 +6377,19 @@ footer {
 /* NAV */
 
 #navbar-main, footer {
-  background-color: #293144;
+  background-color: #122846;
   color: white;
 }
-#navbar-main a:hover {
+#navbar-main a:hover, #navbar-main a:active, .active {
   color:white;
+  text-decoration: none;
+}
+.active, #navbar-main li:hover {
+  background: url('http://www.clipartbest.com/cliparts/Kij/obL/KijobL6rT.svg') center no-repeat;
+  background-size: contain;
+}
+.dropdown-menu .active, .dropdown-menu li:hover{
+  background: none !important;
 }
 .dropdown-menu li a:hover {
   color: #293144;
@@ -6407,17 +6416,37 @@ footer {
   padding-right: 0 !important;
 }
 
-/* PROGRAMMABOEKJE */
-.carousel-caption {
-  color: #E6E0DD;
+.btn-inschrijven{
+  background-color: #e41c38;
+  color: white;
+  text-decoration: none !important;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
-.programmaboekje .col-md-4 h2{
+.btn-inschrijven:hover {
+  color: #e41c38;
+  background-color: white;
+}
+.inschrijven {
+  background-color: #122846;
+  padding-top: 10px;
+  color:white;
+  border-radius: 5px 5px 0 0;
+}
+
+/* PROGRAMMABOEKJE */
+.programmaboekje .col-md-6 h2{
   font-size: 200%;
   transition: all .2s ease-in-out;
+  color: #122846;
 }
-.programmaboekje .col-md-4:hover h2{
+.programmaboekje .col-md-6:hover h2{
   font-size: 300%;
+  color: #e41c38;
   transform: rotate(10deg);
+}
+.programmaboekje img {
+  width: 60%;
 }
 
 /* BLOG */
